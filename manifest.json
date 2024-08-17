@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Token Extractor",
+  "version": "6.9",
+  "description": "Extracts discord tokens off pages",
+  "permissions": ["notifications", "activeTab", "scripting", "clipboardWrite", "storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+"action": {
+    "default_popup": "popup.html"
+  }
+}

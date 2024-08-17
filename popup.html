@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Extractor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    body {
+      background-color: #282c34;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      width: 350px;
+      background-color: #282c34;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .scan-button {
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ff5733;
+      color: white;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .scan-button:hover {
+      background-color: #e74c3c;
+    }
+    .content {
+      text-align: center;
+      margin-bottom: 0.3rem;
+    }
+    .content p {
+      font-size: 0.9rem;
+      color: #888;
+      text-shadow: 1px 1px 4px #181818;
+    }
+    .content span {
+      font-weight: bold;
+      color: #ddd;
+    }
+    .result {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #ff5733;
+      text-shadow: 1px 1px 4px #181818;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #181818;
+    }
+    .title h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h2>Dextract</h2>
+    </div>
+    <div class="content">
+      <p>Extract user/bot tokens from this page</p>
+      <p>You can scan again using the button below</p>
+      <div id="result" class="result bold"><span></span></div>
+    </div>
+    <div class="button-container">
+      <button class="scan-button" id="scanButton">Scan</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
