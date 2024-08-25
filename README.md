@@ -9,15 +9,10 @@
 - **Clipboard Integration**: Copy valid tokens to the clipboard.
 
 ## Installation
-### Manual Installation
   1. Clone or download the repository.
   2. Open Chrome and navigate to `chrome://extensions/`.
   3. Enable "Developer mode".
   4. Click "Load unpacked" and select the extension directory.
-### Direct Installation
-  1. Download the latest release from the [releases page](https://github.com/fuck-scammers/token-extractor/releases/).
-  2. Navigate to `chrome://extensions/`.
-  3. Drag the downloaded `.crx` file onto the page.
 
 ## Usage
 
