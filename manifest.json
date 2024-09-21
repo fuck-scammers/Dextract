@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Token Extractor",
-  "version": "6.9",
+  "name": "Dextract",
+  "version": "1.2",
   "description": "Extracts discord tokens off pages",
   "permissions": ["notifications", "activeTab", "scripting", "clipboardWrite", "storage", "tabs"],
   "content_scripts": [
